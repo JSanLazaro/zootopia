@@ -1,1 +1,6 @@
 INSERT INTO users (id,name, password) VALUES (DEFAULT,"jesus","1234")
+INSERT INTO users (id,name, password) VALUES (DEFAULT,"maria","1234")
+INSERT INTO users (id,name, password) VALUES (DEFAULT,"brian","1234")
+INSERT INTO users (id,name, password) VALUES (DEFAULT,"pablo","1234")
+INSERT INTO users (id,name, password) VALUES (DEFAULT,"dulce","1234")
+INSERT INTO users (id,name, password) VALUES (DEFAULT,"david","1234")
