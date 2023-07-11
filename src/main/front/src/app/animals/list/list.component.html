@@ -1,0 +1,42 @@
+<div class="container">
+  <div class="row">
+    <div class="mat-elevation-z8">
+      <table mat-table [dataSource]="dataSource"
+        class="mat-elevation-z8 z-depth-1 table table-responsive table-striped table-bordered table-hover"
+        #tabla1
+        >
+      <ng-container matColumnDef="name">
+        <th mat-header-cell *matHeaderCellDef> NOMBRE </th>
+        <td mat-cell *matCellDef="let animal"> {{animal.name}} </td>
+      </ng-container>
+      <ng-container matColumnDef="type">
+        <th mat-header-cell *matHeaderCellDef> TIPO </th>
+        <td mat-cell *matCellDef="let animal"> {{animal.type}} </td>
+      </ng-container>
+      <ng-container matColumnDef="gender">
+        <th mat-header-cell *matHeaderCellDef> GENERO </th>
+        <td mat-cell *matCellDef="let animal"> {{animal.gender}} </td>
+      </ng-container>
+      <ng-container matColumnDef="date">
+        <th mat-header-cell *matHeaderCellDef> FECHA </th>
+        <td mat-cell *matCellDef="let animal"> <i>{{ animal.date | date:'d/M/y'}}</i></td>
+      </ng-container>
+      <ng-container matColumnDef="origin">
+        <th mat-header-cell *matHeaderCellDef> ORIGEN </th>
+        <td mat-cell *matCellDef="let animal"> {{animal.origin}} </td>
+      </ng-container>
+      <ng-container matColumnDef="img_url">
+        <th mat-header-cell *matHeaderCellDef> IMAGEN </th>
+        <td mat-cell *matCellDef="let animal"> <img src="{{ animal.img_url }}" alt="imagen {{ animal.name }}" srcset="" /></td>
+      </ng-container>
+      <ng-container matColumnDef="family">
+        <th mat-header-cell *matHeaderCellDef> FAMILIA </th>
+        <td mat-cell *matCellDef="let animal"> {{animal.family}} </td>
+      </ng-container> 
+      <tr mat-header-row *matHeaderRowDef="columnas"></tr>
+    <tr mat-row *matRowDef="let row; columns: columnas;"></tr> 
+      </table>
+      <mat-paginator [pageSizeOptions]="[5,10,15]" showFirstLastButtons></mat-paginator>
+    </div>
+  </div>
+</div>
