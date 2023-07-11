@@ -1,6 +1,3 @@
-.back-dark{
-    background-color: rgba(71, 125, 71, 1);
-}
 tr,th{
     text-align: center;
     background-color: rgba(71, 125, 71, 1);
@@ -9,3 +6,14 @@ tr,th{
 img{
     width: 10dvw;
 }
+
+.body-cell{    
+    text-align: center;
+    justify-content: center;
+}
+.middle-cell{
+    // vertical-align: middle;
+}
+.mat-mdc-cell {
+    vertical-align: middle;
+  }

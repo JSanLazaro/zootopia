@@ -12,7 +12,7 @@ import { MatTableDataSource } from '@angular/material/table';
   styleUrls: ['./list.component.scss']
 })
 export class ListComponent{
-  columnas: string[] = ['name', 'type', 'gender','date','origin','img_url','family'];
+  columns: string[] = ['name', 'type', 'gender','date','origin','img_url','family','action'];
     
   animals:Animal[]; 
   dataSource:any;
